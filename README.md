@@ -1,6 +1,10 @@
 # Resume-Builder 🏆
 *This project was made as an 4th sem assignment.*
 
+```
+run Main.java file from src folder to activate the application
+```
+
 ## Overview 🧩
 
 Any professional or official work requires a personal agenda which describes our

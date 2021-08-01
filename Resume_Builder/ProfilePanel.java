@@ -42,7 +42,7 @@ public class ProfilePanel {
         panel.add(fNameL);
 
         //text field to enter the name
-        JTextField fName = new JTextField(preDefault.get(0).split("\\s+")[0]); // The name is split by using "space" as delimeter
+        JTextField fName = new JTextField(preDefault.get(0).split("\\s",2)[0]); // The name is split by using "space" as delimeter
         fName.setBounds(265, 141, 147, 22);
         panel.add(fName);
 
@@ -53,13 +53,13 @@ public class ProfilePanel {
         panel.add(lNameL);
 
         //text field to enter last name
-        JTextField lName = new JTextField();
+        JTextField lName = new JTextField((preDefault.get(0).contains(" ")?preDefault.get(0).split("\\s",2)[1]:null));
         lName.setBounds(473, 141, 147, 22);
         panel.add(lName);
 
         //label to display "Phone Number"
         JLabel phnoL = new JLabel("Phone Number *");
-        phnoL.setBounds(161, 203, 105, 16);
+        phnoL.setBounds(161, 203, 125, 16);
         phnoL.setFont(new Font("Roboto", 0, 14));
         panel.add(phnoL);
 
@@ -228,7 +228,8 @@ public class ProfilePanel {
         ttlBox.setSelectedItem(profileRecieved[0]);
         if (profileRecieved[1] != null)
             fName.setText(profileRecieved[1]);
-        lName.setText(profileRecieved[2]);
+        if (profileRecieved[2] != null)
+            lName.setText(profileRecieved[2]);
         phno.setText(profileRecieved[3]);
         email.setEditable(false);
         if(profileRecieved[5]!=null && profileRecieved[5].equals("Male"))

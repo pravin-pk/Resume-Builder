@@ -58,15 +58,15 @@ public class ProfilePanel {
         panel.add(lName);
 
         //label to display "Phone Number"
-        JLabel phnoL = new JLabel("Phone Number");
-        phnoL.setBounds(161, 203, 100, 16);
+        JLabel phnoL = new JLabel("Phone Number *");
+        phnoL.setBounds(161, 203, 105, 16);
         phnoL.setFont(new Font("Roboto", 0, 14));
         panel.add(phnoL);
 
         //text field to enter phone number
         JTextField phno = new JTextField();
         phno.setBounds(161, 226, 147, 22);
-        phno.setToolTipText("Enter the phone number followed by your country code");
+        phno.setToolTipText("Enter the phone number with your country code");
         panel.add(phno);
 
         //label to display "Email Address"
@@ -86,12 +86,10 @@ public class ProfilePanel {
         panel.add(gender);
 
         //Radiobutton to determine gender
-        //radiobutton to check in "Male"
         JRadioButton male = new JRadioButton("Male");
         male.setActionCommand("Male");
         male.setBackground(Color.decode("#F6D9A1"));
         male.setBounds(620, 231, 70, 11);
-        //male.setSelected(true);
         panel.add(male);
 
         //radiobutton to check in "Female"
@@ -106,6 +104,7 @@ public class ProfilePanel {
         other.setActionCommand("Others");
         other.setBackground(Color.decode("#F6D9A1"));
         other.setBounds(808, 231, 70, 11);
+        other.setSelected(true);
         panel.add(other);
 
         ButtonGroup bgGender = new ButtonGroup();
@@ -269,7 +268,7 @@ public class ProfilePanel {
                 profileData.add(country.getText());//13
               
                 System.out.println(fName.getText().trim());
-                if(profileData.get(1).trim().equals("")||profileData.get(4).trim().equals("")||profileData.get(6).trim().equals("")||profileData.get(7).trim().equals("")||profileData.get(10).trim().equals("")||profileData.get(11).trim().equals("")||profileData.get(12).trim().equals("")||profileData.get(13).trim().equals(""))
+                if(profileData.get(1).trim().equals("")||profileData.get(3).trim().equals("")||profileData.get(6).trim().equals("")||profileData.get(7).trim().equals("")||profileData.get(10).trim().equals("")||profileData.get(11).trim().equals("")||profileData.get(12).trim().equals("")||profileData.get(13).trim().equals(""))
                 {
                     JOptionPane.showMessageDialog(null,"*  Fields Cannot Be Empty","Empty Fields",2);
                 }

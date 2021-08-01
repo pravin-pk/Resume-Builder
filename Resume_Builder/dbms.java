@@ -8,9 +8,9 @@ import javax.swing.JOptionPane;
 // The data can be stored or retrived only through class , thus maintaining security and avoiding data leakage
 public class dbms {
     // REMOTE SERVER
-    private String database = "jdbc:mysql://sql6.freemysqlhosting.net/sql6424721";
-    private String username = "sql6424721";
-    private String password = "hektpFek6Y";
+    private String database = "jdbc:mysql://sql6.freemysqlhosting.net/sql6428652";
+    private String username = "sql6428652";
+    private String password = "HEZZmZl8dL";
 
     // LOCAL CONNECTION
     //private String database = "jdbc:mysql://127.0.0.1/sql6424721";

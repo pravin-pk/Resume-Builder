@@ -60,7 +60,7 @@ public class HobbiesPanel{
         
         //Text area for declaration
         JTextArea decText = new JTextArea();
-        decText.setText("I *Enter your name here*, hereby declare that the above information is true to the best of my knowledge and also try to" +
+        decText.setText("I, *Enter your name here*, hereby declare that the above information is true to the best of my knowledge and also try to" +
         " be involved in the work where I can utilize skills and creativity involved in the system contributes to the" +
         " growth of organization.");
         decText.setFont(new Font("Serif", 1, 20));

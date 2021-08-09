@@ -1,6 +1,8 @@
 # Resume-Builder 🏆
 *This project was made as an 4th sem assignment.*
 
+_Made using java swings_
+
 ```
 run Main.java file from src folder to activate the application
 ```

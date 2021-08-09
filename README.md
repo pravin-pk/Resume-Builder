@@ -7,6 +7,8 @@ _Made using java swings_
 run Main.java file from src folder to activate the application
 ```
 
+#### Contributors : [xxpsynagure](https://github.com/xxpsynagure) , [LkNeha](https://github.com/LkNeha) , [M-Shehzad](https://github.com/M-Shehzad)
+
 ## Overview 🧩
 
 Any professional or official work requires a personal agenda which describes our
